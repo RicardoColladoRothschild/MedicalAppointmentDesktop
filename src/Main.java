@@ -3,7 +3,7 @@ public class Main {
 
         MedicalAppointment ma = new MedicalAppointment();
         ma.setVisible(true);
-        ma.setBounds(0,0,300,300);
+        ma.setBounds(0,0,750,750);
         ma.setResizable(false);
         ma.setLocationRelativeTo(null);
     }

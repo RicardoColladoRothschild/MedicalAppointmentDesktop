@@ -16,7 +16,10 @@ public class MedicalAppointment extends JFrame{
             //crating panel
             panel1 = new JPanel();
             panel1.setLayout(null);
-            panel1.setBounds(0,0,450,450);
+            panel1.setBounds(35,35,350,350);
+
+            //color for panel:
+            panel1.setBackground(new Color(99,183,240));
             add(panel1);
 
 
