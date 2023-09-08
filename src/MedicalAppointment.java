@@ -20,8 +20,6 @@ public class MedicalAppointment extends JFrame{
             add(panel1);
 
 
-                labelTitle = new JLabel("Medical Appontments");
-                labelTitle.setBounds(120,10,100,31);
-                panel1.add(labelTitle);
+
         }
 }
