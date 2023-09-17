@@ -7,7 +7,7 @@ public class Patient extends User{
     private double height;
     String blood;
 
-    private ArrayList<AppointmentsDoctor> appointmentWithDoctor = new ArrayList<>();
+    private ArrayList<AppointmentDoctor> appointmentWithDoctor = new ArrayList<>();
     private ArrayList<AppointmentNurse> appointmentWithNurse = new ArrayList<>();
 
     public ArrayList<AppointmentDoctor> getAppointmentDoctors(){
