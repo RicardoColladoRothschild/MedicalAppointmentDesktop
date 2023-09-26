@@ -4,7 +4,7 @@ import java.text.ParseException;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-public class AppointmentDoctor implements Ischedulable {
+public class AppointmentDoctor implements ISchedulable {
 
     private int id;
     private Patient patient;

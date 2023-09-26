@@ -1,5 +1,5 @@
 package Model;
 
-public interface Ischedulable {
+public interface ISchedulable {
     void schedule(String date, String time);
 }

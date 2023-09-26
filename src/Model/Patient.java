@@ -15,7 +15,7 @@ public class Patient extends User{
         return appointmentWithDoctors;
     }
 
-    public Arraylist<AppointmentNurse> getappointmentWithNurse(){
+    public ArrayList<AppointmentNurse> getappointmentWithNurse(){
         //HERE MISSING CODE TO QUERY TO DB ABOUT SPECIFIC PATIENT APPOINTMENT WITH NURSE, DO IT LATER
         return appointmentWithNurse;
     }
