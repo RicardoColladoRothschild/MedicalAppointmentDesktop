@@ -20,7 +20,7 @@ public class Doctor extends User{
         }
 
         //Following array list is to hold available appointments for the specific object Docotr
-        private ArrayList<AvailableAppointment> availableAppointments = new Arraylist<>();
+        private ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
 
         //method to add appointments to the array:
         public void addAvailableAppointment(Date date, String time){
