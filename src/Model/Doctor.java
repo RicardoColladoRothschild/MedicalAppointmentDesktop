@@ -87,6 +87,7 @@ public class Doctor extends User{
                 for(int i = 0; i < availableAppointments.size(); i++){
                     result+=availableAppointments.toString() + "\n";
                 }
+                return result;
         }
 
     @Override
