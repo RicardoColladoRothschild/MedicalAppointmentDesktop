@@ -1,7 +1,11 @@
 package Model;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.text.ParseException;
+import java.util.Date;
+import java.util.Timer;
 public class Doctor extends User{
 
     private String speciality;
@@ -19,7 +23,7 @@ public class Doctor extends User{
             this.speciality = s;
         }
 
-        //Following array list is to hold available appointments for the specific object Docotr
+        //Following array list is to hold available appointments for the specific object Doctor
         private ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
 
         //method to add appointments to the array:
@@ -38,9 +42,12 @@ public class Doctor extends User{
             private Date date;
             private String time;
 
+            //SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
             public AvailableAppointment(Date d, String t){
-                this.date = d;
-                this.time = t;
+
+                    this.date = d;
+                    this.time =time;
+
             }
             public int getId() {
                 return id;
@@ -67,13 +74,24 @@ public class Doctor extends User{
             }
 
 
-
+        @Override
+            public String toString(){
+                return "Date: " + this.date + "| Time: " + this.time;
+            }
 
         }
 
+        @Override
+        public String toString(){
+            String result = "Available Appointments:\n";
+                for(int i = 0; i < availableAppointments.size(); i++){
+                    result+=availableAppointments.toString() + "\n";
+                }
+        }
 
     @Override
     public void showDataUser() {
-
+            //TODO - LATER
+        //Method will be build to show a new JFrame with doctor information
     }
 }
