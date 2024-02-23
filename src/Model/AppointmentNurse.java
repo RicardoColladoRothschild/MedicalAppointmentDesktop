@@ -10,10 +10,14 @@ public class AppointmentNurse implements ISchedulable{
     private String time;
 
     //Need to create Nurse class, it need to have appointments available, kind of patients etc..
-    public AppointmentNurse(Patient patient, Nurse nurse){}
+    public AppointmentNurse(Patient patient, Nurse nurse){
+        this.patient = patient;
+        this.nurse = nurse;
+    }
 
     @Override
     public void schedule(String date, String time) {
-
+        //TODO - LATER
+        //Receive the date and time in string, msut formated to Date, internally and prepare to send it to DB.
     }
 }
